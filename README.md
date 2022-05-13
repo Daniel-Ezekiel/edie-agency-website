@@ -37,7 +37,7 @@
 ## Overview
 
 ![Mobile](https://github.com/Daniel-Ezekiel/edie-agency-website/blob/main/images/screenshots/Mobile.png)
-![Desktop]https://github.com/Daniel-Ezekiel/edie-agency-website/blob/main/images/screenshots/Desktop.png)
+![Desktop](https://github.com/Daniel-Ezekiel/edie-agency-website/blob/main/images/screenshots/Desktop.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
