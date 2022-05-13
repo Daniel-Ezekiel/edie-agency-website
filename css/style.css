@@ -1,0 +1,838 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+main,
+section,
+footer{
+  padding: 0 10px;
+}
+
+
+/******************************************
+/* LAYOUT
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Poppins', sans-serif; */
+/*******************************************/
+header{
+  width: 90%;
+  margin: auto;
+  padding: 25px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header span{
+  font-family: 'Heebo', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+
+  z-index: 11;
+}
+
+header span a{
+  color:rgba(51, 51, 51, 1);
+  text-decoration: none;
+}
+
+/* Responsive Hamburger Menu */
+.hamburger{
+  display: block;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+
+  appearance: none;
+  outline: none;
+  background: none;
+  border: none;
+  
+  z-index: 11;
+}
+
+.menu-bar,
+.hamburger::before,
+.hamburger::after{
+  content: '';
+  display: block;
+  height: 3px;
+  width: 85%;
+  margin: auto;
+  margin-top: 5px;
+  background: rgba(51, 51, 51, 1);
+  transition: all 0.4s ease;
+}
+
+.menu-bar.is-active{
+  opacity: 0;
+}
+
+.hamburger.is-active::before{
+  transform: rotate(45deg) translate(11px);
+}
+
+.hamburger.is-active::after{
+  transform: rotate(-45deg) translate(11px);
+}
+
+/* End of responsive hanmburger menu styling and beginning of header menu styling for mobile*/
+header nav.is-active{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: -500px;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  transition: all 1s ease-in-out;
+}
+
+header nav ul{
+  height: 100%;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+header li{
+  padding: 20px 0;
+
+  text-align: center;
+}
+
+header li a{
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(51, 51, 51, 1);
+
+  transition: all ease 0.4s
+}
+
+header li a:hover{
+  border-bottom: 3px solid rgba(51, 51, 51, 1);
+}
+
+/* End of Responsive Menu Styling */
+
+main{
+  margin-top: 30px;
+}
+
+.main-top-container,
+.main-bottom-container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.main-top-container > span{
+  font-weight: 500;
+  color: 
+  rgba(45, 156, 219, 1);
+}
+
+img{
+  width: 100%;
+  border-radius: 12px;
+}
+
+h1,
+h2,
+h3{
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h1 span,
+h2 span{
+  display: block;
+}
+
+main p{
+  font-size: 1.2rem;
+  line-height: 1.6
+}
+
+main p,
+form.for-newsletter{
+  width: 80%;
+}
+
+form.for-newsletter{
+  position: relative;
+  margin-top: 30px;
+}
+
+form label{
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+
+  font-weight: 500;
+  color: 
+  rgba(45, 156, 219, 1);
+  font-size: 1rem;
+}
+
+form input{
+  width: 100%;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 22px 15px;
+  border: none;
+  border-radius: 12px;
+
+  font-size: 1.4rem;
+}
+
+form a{
+  background-color: 
+  rgba(45, 156, 219, 1);
+  padding: 15px 18px;
+  border-radius: 12px;
+
+  position: absolute;
+  right: 7px;
+  top: 23px;
+
+  font-size: 1.4rem;
+  color:#fff;
+  text-decoration: none;
+}
+
+#services-section{
+  width: 80%;
+  margin: 0 auto;  
+  margin-top: 40px;
+  padding-top: 25px;
+}
+
+#services-section h2{
+  padding-left: 10px;
+}
+
+.services-box{
+  padding: 45px 15px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+div.services-box > a{
+  display: inline-block;
+  width: 120px;
+  padding: 15px 10px;
+  border-radius: 12px;
+  background-color: rgba(224, 224, 224, 1);
+
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  color:rgba(79, 79, 79, 1);
+  text-decoration: none;
+}
+
+
+.services-box h3{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.services-box p{
+  padding-right: 25px;
+
+  font-size: 1.3rem;
+  line-height: 1.5
+}
+
+.services-box:hover{
+  box-shadow:  0px 10px 30px 0px rgba(51, 51, 51, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+div.middle-service-box > div{
+  background-color: rgba(39, 174, 96, 1);
+}
+
+.services-box > a:hover{
+  background-color: 
+  rgba(45, 156, 219, 1);
+
+  color: #fff;
+}
+
+.services-box > div{
+  height: 50px;
+  width: 50px;
+  border-radius: 16px;
+  background-color: 
+  rgba(45, 156, 219, 1);
+}
+
+i{
+  display: block;
+  padding: 11px;
+
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#product-examples-container h2{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-top: 25px;
+}
+
+.product-example{
+  margin: 35px 0;
+  margin-bottom: 0;
+}
+
+.product-example span{
+  display: block;
+  margin-top: 5px;
+
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(130, 130, 130, 1);
+  line-height: 1.8;
+}
+
+.product-example h4{
+  margin: 0 auto;
+  margin-top: 5px;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.last-example{
+  margin-bottom: 25px;
+}
+
+div + span{
+  display: inline-block;
+  
+  font-size: 1.8rem;
+  font-weight: 500;
+  color:rgba(45, 156, 219, 1);
+}
+
+div + span > i {
+  padding: 10px;
+
+  font-size: 1.7rem;
+  font-weight: 300;
+  color:rgba(45, 156, 219, 1)
+}
+
+#team-container{
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+#team-container > span,
+#team-container div > span{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: 
+  rgba(235, 87, 87, 1);
+}
+
+#team-container h2{
+  margin: 0;
+  margin-top: 12px;
+
+  font-size: 3rem;
+}
+
+#team-container p{
+  margin-bottom: 50px;
+
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+#team-container p span{
+  display: block;
+  width: 100%;
+}
+
+.team-images-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.member1{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.member2{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.member3{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+}
+
+.review-container{
+  margin-top: 50px;
+  margin-bottom: 90px;
+  padding-top: 15px;
+}
+
+.customer-review-text{
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.reviewer-container{
+  display: flex;
+}
+
+.reviewer-container img{
+  width: 80px;
+}
+
+.reviewer-info-container{
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.reviewer-info-container h3{
+  margin: 10px 0;
+}
+
+.reviewer-info-container span{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgba(130, 130, 130, 1);
+}
+
+footer{
+  margin-top: 50px;
+  padding: 0 25px;
+  background-color: rgba(16, 14, 29, 1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+footer > *{
+  padding: 20px ;
+  color: #fff;
+}
+
+footer a{
+  transition: all ease-in-out 0.5s;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover{
+  border-bottom: 3px solid #fff;
+}
+
+footer nav{
+  padding-top: 10px;
+}
+
+footer nav ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li{
+  padding: 5px 0;
+
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.site-id{
+  margin: 40px 0;
+}
+
+.site-id span{
+  display: inline-block;
+  padding-bottom: 5px;
+
+  font-family: 'Heebo', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.social-links{
+  display: flex;  
+}
+
+footer img{
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 5px;
+  border-radius: 0;
+  width: 28px;
+}
+
+footer form{
+  margin: 0 auto;
+  padding: 0;
+  min-width: 100%;
+}
+
+footer form label{
+  color: rgba(130, 130, 130, 1);
+}
+
+footer > p{
+  margin-top: 30px;
+
+  font-size: 1.4rem;
+  text-align: center;
+  color:rgba(79, 79, 79, 1);
+}
+
+footer p a{
+  font-weight: 800;
+  color:rgba(79, 79, 79, 1);
+  transition: all ease-in 0.4s;
+}
+
+footer a:hover{
+  border-bottom: 3px solid rgba(79, 79, 79, 1);;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/MEDIA QUERIES*******************************************/
+@media screen and (min-width: 768px){
+  .hamburger{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: contents;
+  }
+
+  .mobile-nav ul{
+    display: flex;
+  }
+
+  header li{
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  .main-top-container,
+  .main-bottom-container{
+    width: 60%;
+  }
+
+  .main-bottom-container p,
+  .main-bottom-container form{
+    width: 55%;
+  }
+
+  #services-section{
+    margin-top: 125px;
+    width: 85%;
+
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  h2{
+    min-width: 100%;
+  }
+
+  .overall-services-box{
+  display: flex;
+  justify-content: space;
+}
+
+  .services-box{
+    max-width: 32.33%;
+    margin: 0 2.5px;
+    padding: 20px 15px;
+  }
+
+  i{
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+
+  div.img-box{
+    height: 50px;
+    width: 50px;
+  }
+
+  .services-box h3{
+    font-size: 1.8rem;
+  }
+
+  .services-box p{
+    font-size: 1.2rem;
+  }
+
+  div.services-box a{
+    font-size: 1.3rem;
+  }
+
+  #product-examples-container{
+    margin: 0 auto;
+    margin-top: 125px;
+    width: 90%;
+  }
+
+  #product-examples-container > div + div{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .product-example{
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  .product-example:nth-child(odd){
+    margin-top: 125px;
+  }
+
+  .last-example{
+    margin-top: 0;
+  }
+
+  #product-examples-container > div + span{
+    display: block;
+    width: 100%;
+    margin-left: 8px;
+    padding-top: 8px;
+    cursor: pointer;
+
+    position: relative;
+    top: -35px;
+
+    text-align: right;
+  }
+
+  #team-container{
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  } 
+
+  #team-container div{
+    max-width: 50%;
+  }
+
+  #team-container div > span{
+    font-size: 1.6rem;
+  }
+
+  #team-container div > h2{
+    font-size: 2.6rem;
+  }
+
+  #team-container div > p{
+    font-size: 1.5rem;;
+  }
+
+  .review-container{
+    max-width: 90%;
+    margin: 50px auto 0;
+  }
+
+  .customer-review-text{
+    width: 50%;
+    font-size: 1.75rem;
+  }
+
+  .reviewer-container img{
+    width: 55px;
+    height: 55px;
+
+    align-self: center;
+  }
+
+  .reviewer-info-container h3{
+    margin: 5px 0;
+    font-size: 1.6rem;
+  }
+
+  .reviewer-info-container span{
+    font-size: 1.2rem;
+  }
+
+  footer{
+    padding: 0 7%;
+    padding-top: 70px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer > div{
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  div nav{
+    padding-top: 0;
+  }
+  
+  div nav ul{
+    margin-top: 0;
+  }
+
+  footer nav,
+  footer .site-id{
+    min-width: 30%;
+  }
+
+  footer div form.for-newsletter{  
+    margin-top: 0;  
+    min-width: 0;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  header{
+    width: 90%;
+    margin-top: 30px;
+    padding-bottom: 70px;
+  }
+
+  header li{
+    padding: 0;
+    padding-left: 50px;
+  }
+
+ body > main,
+ body > section{
+  width: 80%;
+  margin: auto;
+ }
+
+ .main-top-container,
+ .main-bottom-container{
+   max-width: 55%;
+ }
+
+ #services-section,
+ #product-examples-container,
+ #team-container,
+ .review-container{
+   width: 75%;
+ }
+
+ #services-section .services-box{
+   margin: 10px;
+   padding-right: 50px;
+ }
+
+ footer{
+   margin-top: 125px;
+   padding: 0 12.5%;
+   padding-top: 100px;
+ }
+}
+
+@media screen and (min-width: 1440px){
+  body > main,
+  body > section{
+    width: 60%;
+    margin: auto;
+  }
+
+  #services-section,
+  #product-examples-container,
+  #team-container,
+  .review-container{
+    width: 55%;
+  }
+
+  #services-section .services-box{
+    padding-right: 50px;
+  }
+
+  .product-example:nth-child(odd){
+    margin-top: 100px;
+  }
+
+  .customer-review-text{
+    width: 40%;
+    font-size: 1.75rem;
+  }
+
+  footer{
+    padding: 0 22.5%;
+    padding-top: 100px;
+  }
+}
