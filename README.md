@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://profilee-page.netlify.app/">
+    <a href="https://edie-agency.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -42,7 +42,7 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo? 
-   [See my Demo](https://profilee-page.netlify.app/)
+   [See my Demo](https://edie-agency.netlify.app/)
 - What was your experience?
    This challenge has been a real eye opener for me, I've seen my limitations and know what I need to improve on.
 - What have you learned/improved?
@@ -62,7 +62,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0) was to build an application to complete the given user stories.
 
 
 ## Acknowledgements
