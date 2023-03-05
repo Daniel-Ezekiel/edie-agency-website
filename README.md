@@ -41,14 +41,14 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo? 
-   [See my Demo](https://edie-agency.netlify.app/)
+- Where can I see your demo?
+  [See my Demo](https://edie-agency.netlify.app/)
 - What was your experience?
-   This challenge has been a real eye opener for me, I've seen my limitations and know what I need to improve on.
+  This challenge has been a real eye opener for me, I've seen my limitations and know what I need to improve on.
 - What have you learned/improved?
-   My use of media queries has become better, and with more practice will keep getting better. I used this challenge to get the hang of using CSS Grid for layouts and it has been a really fun experience.
+  My use of media queries has become better, and with more practice will keep getting better. I used this challenge to get the hang of using CSS Grid for layouts and it has been a really fun experience.
 - Your wisdom? :)
-   Mobile first, always and forever! 
+  Mobile first, always and forever!
 
 ### Built With
 
@@ -64,7 +64,6 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0) was to build an application to complete the given user stories.
 
-
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
@@ -76,6 +75,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [Daniel Ezekiel - Portfolio](https://danielezekiel.netlify.app/)
-- GitHub [@Daniel Ezekiel](https://github.com/Daniel-Ezekiel)
-- Twitter [@db_ezekiel](https://twitter.com/db_ezekiel)
+- [Portfolio Website](https://www.danielezekiel.me)
+- [LinkedIn](https://linkedin.com/in/db-ezekiel)
+- [Twitter](https://twitter.com/db_ezekiel)
